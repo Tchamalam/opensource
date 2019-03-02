@@ -18,7 +18,7 @@ public class OpenSourceApp {
 			}
 		}
 		
-		System.out.println(" \n \n   ****************  Open Source 1.0  ****************  \n");
+		System.out.println(" \n \n   ****************  Open Source 0.1  ****************  \n\n");
 	}
 
 }
