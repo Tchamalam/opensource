@@ -28,7 +28,7 @@ public class ReaderHelper {
 	/**
 	 * Given a path, this method reads the content of the file and parses it to a JSONObject object.
 	 * @param path The path of the file to be read.
-	 * @return the <tt>JSONObject<tt> version of the contenet of the file.
+	 * @return the <tt>JSONObject<tt> version of the content of the file.
 	 */
 	public static JSONObject parse(String path) {
 		
