@@ -326,7 +326,7 @@ public class ApplicationStarter {
 	}
 	
 	private static LocalDate getDateToScheduleInterview() {
-		System.out.println("Enter the date you'd like to schedule the interview"
+		System.out.println("Enter the date you'd like to schedule the interview\n"
 				+ "Caution: Format for date yyyy-mm-dd");
 		String input = scanner.nextLine();
 		while (!CheckPreconditions.isInputDate(input)) {
