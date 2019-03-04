@@ -365,7 +365,6 @@ public class AdminController extends Controller{
 		}
 	}
 	
-	
 	public void applyCandidateTo(Candidate candidate, String companyName) {
 		HR hr = provideHROfCompany(companyName);
 		if (hr == null) {
