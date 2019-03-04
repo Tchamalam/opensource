@@ -39,9 +39,9 @@ public class ReaderHelper {
 			object = (JSONObject) parser.parse(file);
 			
 		} catch (IOException e) {
-			System.out.println(e.getMessage() + "not found");
+			System.out.println(e.getMessage());
 		} catch (ParseException e) {
-			System.out.println(e.getMessage() + " dont know");
+			System.out.println(e.getMessage());
 		}
 		
 		return object;
@@ -373,7 +373,7 @@ public class ReaderHelper {
 		return object;
 	}
 	
-	//----------------------------------String to Types Convertors-------------------------------\\
+	//----------------------------------String to Types Converters-------------------------------\\
 	/**
 	 * Converts a given date as String to LocalDate.
 	 * @param date The String version of the date.

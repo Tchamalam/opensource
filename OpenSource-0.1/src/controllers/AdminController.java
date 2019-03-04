@@ -11,45 +11,63 @@ import forms.*;
 import repositories.*;
 
 /**
+ * This controller is the one responsible for controlling any actions made by all users
+ * including candidates, HRs and their companies.
+ * It also provides all necessary informations to the latter.
  * 
  * @author Ben-Malik TCHAMALAM
+ * Since 2019
  *
  */
 public class AdminController extends Controller{
 	
-	
 	@SuppressWarnings("unused")
 	private User user;
+	
 	private Reader<User> reader;
+	
 	private Reader<Candidate> candidateReader;
+	
 	private Reader<HR> hrReader;
+	
 	private Reader<Company> companyReader;
+	
 	private Reader<Interview> interviewReader;
+	
 	private Reader<Application> applicationReader;
 	
 	private Repository<User> userRepository;
+	
 	private Repository<Candidate> candidateRepository;
+	
 	private Repository<HR> hrRepository;
+	
 	private Repository<Company> companyRepository;
+	
 	private Repository<Interview> interviewRepository;
+	
 	private Repository<Application> applicationRepository;
 	
 	private Scanner scanner;
 	
 	private CandidateForm candidateForm;
+	
 	private UserForm userForm;
+	
 	private CompanyForm companyForm;
+	
 	private HRForm hrForm;
 	
 	private Recommendation recommendation;
+	
 	private Application application;
 	
 	private Login<Candidate> loginCandidate;
-	Login<HR> HRLogin;
-	Login<User> loginAdmin;
-
-
 	
+	private Login<HR> HRLogin;
+	
+	private Login<User> loginAdmin;
+
 	public AdminController(User user) {
 		
 		CheckPreconditions.ensureIsAdmin(user);
