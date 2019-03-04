@@ -69,7 +69,7 @@ public class AdminController extends Controller{
 	private Login<User> loginAdmin;
 
 	public AdminController(User user) {
-		
+		/** Ensure the user making use of this controller is an Admin. */
 		CheckPreconditions.ensureIsAdmin(user);
 		this.user = user;
 		this.scanner = new Scanner(System.in);
@@ -97,9 +97,7 @@ public class AdminController extends Controller{
 		loginAdmin = new LoginAdmin(userRepository);
 		
 		setRecommendations();
-		
 	}
-	
 	
 	public void viewAdminProfile(String name) {
 		System.out.println("\n********************* ADMIN PROFILE **********************");
