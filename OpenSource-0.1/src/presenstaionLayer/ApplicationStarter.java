@@ -77,8 +77,8 @@ public class ApplicationStarter {
 		} else {
 			System.out.println("Unknow operation");
 		}
+		
 		return operationType;
-			
 	}
 	
 	private static int HRActions(HR hr, int action, String name) {
