@@ -42,9 +42,6 @@ public class Company {
 	}
 	
 	public void setEmail(String email) {
-		if (!email.contains("@")) {
-			throw new IllegalArgumentException("Invalid input for the email");
-		}
 		this.email = email;
 	}
 	
